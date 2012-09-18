@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'cowsay'
+
+message = ARGV.join(' ')
+puts Cowsay.say message
