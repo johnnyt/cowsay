@@ -1,5 +1,5 @@
 Copyright (c) 2012 JohnnyT
-Copyright (C) 2012 Zerobuf contributors https://github.com/johnnyt/zerobuf/contributors
+Copyright (C) 2012 Cowsay contributors https://github.com/johnnyt/cowsay/contributors
 
 MIT License
 
