@@ -63,6 +63,8 @@ module Cowsay
           end
         end
 
+        lines << new_line.chomp unless new_line.length.zero?
+
         lines
       end
     end

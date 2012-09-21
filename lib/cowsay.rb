@@ -14,6 +14,6 @@ module ::Cowsay
   end
 
   def say(message)
-    puts random_character.say(message)
+    random_character.say(message)
   end
 end
