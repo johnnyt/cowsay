@@ -1,5 +1,5 @@
-Copyright (c) 2012 JohnnyT
-Copyright (C) 2012 Cowsay contributors https://github.com/johnnyt/cowsay/contributors
+Copyright 2012 MoneyDesktop Inc.
+Copyright Cowsay contributors https://github.com/moneydesktop/cowsay/contributors
 
 MIT License
 
