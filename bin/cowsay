@@ -2,5 +2,9 @@
 
 require 'cowsay'
 
-message = ARGV.join(' ')
+message = if ARGV.any?
+  ARGV.join(' ')
+else
+  ARGF.read.chomp
+end
 puts Cowsay.say message
