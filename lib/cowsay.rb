@@ -10,7 +10,7 @@ module ::Cowsay
   end
 
   def character_classes
-    @character_classes ||= Character.constants - [:Base, :Template]
+    @character_classes ||= Character.constants.map { |c| c.to_sym } - [:Base, :Template]
   end
 
   def say(message)
