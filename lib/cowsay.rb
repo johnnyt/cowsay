@@ -21,7 +21,7 @@ module ::Cowsay
       if character_classes.include? character.capitalize.to_sym
         Character.const_get(character.capitalize).say(message)
       else
-        puts "No cowfile found for #{character}. Use the -l flag to see a list of available characters."
+        puts "No cow file found for #{character}. Use the -l flag to see a list of available cow files."
       end
     end
   end
