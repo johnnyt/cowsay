@@ -13,7 +13,16 @@ module ::Cowsay
     @character_classes ||= Character.constants.map { |c| c.to_sym } - [:Base, :Template]
   end
 
-  def say(message)
-    random_character.say(message)
+  def say(message, character)
+    character ||= 'cow'
+    if character == 'random'
+      random_character.say(message)
+    else
+      if character_classes.include? character.capitalize.to_sym
+        Character.const_get(character.capitalize).say(message)
+      else
+        puts "No cowfile found for #{character}. Use the -l flag to see a list of available characters."
+      end
+    end
   end
 end
